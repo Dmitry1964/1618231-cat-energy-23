@@ -1,0 +1,125 @@
+.example {
+  padding: 27px 20px 0;
+  background-color: @gray-special;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: @basic-black;
+  margin: 0 0 33px;
+
+}
+
+.example__description {
+  font-family: @font-second;
+  font-size: 14px;
+  line-height: 18px;
+  color: @basic-dark;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.stat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .stat-list__total {
+    width: 124px;
+    height: 56px;
+    border: 1px solid @light-gray-pro;
+    border-radius: 3px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: @basic-black;
+    padding: 14px;
+    margin: 0;
+  }
+
+  .stat-list__resume {
+    width: 87px;
+    font-family: @font-second;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: @basic-dark;
+    background-color: @gray-special;
+    margin: 0;
+    margin-top: -10px;
+  }
+
+  .stat-list__damage {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    margin: 26px 0 31px 42px;
+  }
+}
+
+.example__image {
+  width: 280px;
+  height: 232px;
+  object-fit: cover;
+  margin: 0 auto;
+
+}
+
+.result-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0 38px;
+
+  .result-items__itwas {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .result-items__now {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .scale-item {
+    width: 84px;
+    height: 14px;
+    border: 1px solid @light-gray-pro;
+    border-radius: 6px;
+    background-color: @basic-white;
+    margin: 0 12px 0 12px;
+
+    .scale-item__bar {
+      width: 35px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: @basic-green;
+      margin: 3px 5px;
+    }
+  }
+}
