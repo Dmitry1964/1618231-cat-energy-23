@@ -25,7 +25,10 @@
 .field-input {
   padding: 14px 15px;
 
-  &::placeholder {
+  &[placeholder],
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -41,7 +44,7 @@
   width: 280px;
   border: none;
   padding: 10px;
-  margin-left:  20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -52,6 +55,5 @@
   line-height: 16px;
   color: @basic-black;
   text-align: center;
-  margin: 0 ;
-
+  margin: 0;
 }
