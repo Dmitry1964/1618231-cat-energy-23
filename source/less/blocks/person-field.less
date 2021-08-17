@@ -1,0 +1,46 @@
+.person-field {
+  border: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.person-field__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.person-field__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  .field-input {
+    border: 1px solid @gray-super-puper;
+  }
+
+  &:first-child .field-input {
+    width: 229px;
+  }
+
+  &:nth-child(2) .field-input {
+    width: 204px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child .field-input {
+    width: 172px;
+  }
+}
+
+.person-field__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic-dark;
+}
+

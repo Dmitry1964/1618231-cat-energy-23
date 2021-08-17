@@ -1,0 +1,127 @@
+.catalog-product {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.catalog-product__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: @basic-black;
+  border-top: 1px solid @gray-special-pro;
+  margin: 0 auto;
+  padding: 27px 20px 0;
+  margin-bottom: 41px;
+}
+
+.catalog-product__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  padding: 18px 20px 24px;
+  border-top: 1px solid @light-gray-pro;
+
+  &:last-child {
+    border-bottom: 1px solid @light-gray-pro;
+  }
+}
+
+.catalog-item__wrapper {
+  display: grid;
+  grid-template-columns: 140px 140px;
+}
+
+.catalog-item__image {
+  justify-self: center;
+  align-self: center;
+}
+
+.catalog-item__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+.catalog-item__link {
+  text-decoration: none;
+  color: @basic-dark-vogue;
+}
+
+.catalog-item__list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.catalog-item__key {
+  font-family: @font-second;
+  font-size: 12px;
+  line-height: 16px;
+  align-self: center;
+  color: @basic-dark;
+}
+
+.catalog-item__meaning {
+  font-family: @font-second;
+  font-size: 12px;
+  line-height: 16px;
+  color: @basic-dark;
+  justify-self: end;
+  align-self: center;
+  margin: 0;
+}
+
+
+.catalog-item__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 22px 0 0;
+
+  .catalog-item__link {
+    text-decoration: none;
+    color: @basic-white;
+  }
+}
+
+.catalog-last-item__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.catalog-last-item__description {
+  font-family: @font-second;
+  font-size: 12px;
+  line-height: 16px;
+  color: @basic-dark;
+  text-align: center;
+  margin: 0 0 21px;
+}
+
+.catalog-last-item__button {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @basic-gray;
+  margin: 0 0;
+
+  .catalog-last-item__link {
+    text-decoration: none;
+    color: @basic-dark;
+  }
+}

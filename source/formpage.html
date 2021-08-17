@@ -4,15 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
-        <img src="img/logo-text.png" width="101" height="18" alt="Название">
-        <!-- <img class="visually-hidden" src="img/logo-image-tablet.png" width="174" height="52" alt="Логотип магазина"> -->
+        <a href="index.html">
+          <img src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
+        </a>
+        <a href="index.html">
+          <img src="img/logo-text.png" width="101" height="18" alt="Название">
+        </a>
         <button class="page-header__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -20,8 +27,7 @@
       <nav class="page-header__navigation page-header__navigation--closed">
         <ul class="page-header__list">
           <li class="page-header__item">Главная</li>
-          <li class="page-header__item">
-            <a class="page-header__link active" href="catalog.html">Каталог продукции</a>
+          <li class="page-header__item active"><a class="page-header__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-header__item"><a class="page-header__link" href="formpage.html">Подбор программы</a>
           </li>
@@ -30,64 +36,70 @@
     </div>
   </header>
 
-  <main>
-    <section class="page-main">
-      <h2 class="page-main__title">Подбор программы</h2>
-      <p class="page-main__discription">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="page-main__form page-form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="page-form__person person-field">
+  <main class="page-main">
+    <section class="profile">
+      <h2 class="profile__title">Подбор программы</h2>
+      <p class="profile__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      <form class="profile__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="profile-form__person person-field">
           <ul class="person-field__list">
             <li class="person-field__item">
               <label class="person-field__label" for="cat-name">Имя:*</label>
-              <input class="form-field" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+              <input class="person-field__form-field field-input" type="text" name="cat-name" id="cat-name"
+                placeholder="Барсик">
             </li>
             <li class="person-field__item">
               <label class="person-field__label" for="cat-weight">Вес (кг):*</label>
-              <input class="form-field" type="text" name="cat-age" id="cat-weight" placeholder="7">
+              <input class="person-field__form-field field-input" type="text" name="cat-age" id="cat-weight"
+                placeholder="7">
             </li>
             <li class="person-field__item">
-              <label class="person-field__label" for="cat-age">Вес (кг):</label>
-              <input class="form-field" type="text" name="cat-age" id="cat-age" placeholder="7">
+              <label class="person-field__label" for="cat-age">Возраст (лет):</label>
+              <input class="person-field__form-field field-input" type="text" name="cat-age" id="cat-age"
+                placeholder="7">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="page-form__target target-field">
-          <ul class="target-feld__list">
+        <fieldset class="pofile-form__target target-field">
+          <ul class="target-field__list">
             <li class="target-field__item">
-              <input type="radio" name="cat-target" id="thin-cat" checked>
+              <input class="radio-input" type="radio" name="cat-target" id="thin-cat" checked>
               <label class="target-field__label" for="thin-cat">Похудение</label>
             </li>
             <li class="target-field__item">
-              <input type="radio" name="cat-target" id="hard-cat">
+              <input class="radio-input" type="radio" name="cat-target" id="hard-cat">
               <label class="target-field__label" for="hard-cat">Набор массы</label>
             </li>
             <li class="target-field__item">
-              <input type="radio" name="cat-target" id="middle-cat">
+              <input class="radio-input" type="radio" name="cat-target" id="middle-cat">
               <label class="target-field__label" for="middle-cat">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="page-form__contact contact-field">
-          <h3 class="contact-field__title">Контактные данные(владельца кота)</h3>
+        <fieldset class="pofile-form__contact contact-field">
+          <h3 class="contact-field__title">Контактные данные (владельца кота)</h3>
           <ul class="contact-field__list">
             <li class="contact-field__item">
               <label class="contact-field__label" for="email">e-mail:</label>
-              <input class="contact-field__email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="contact-field__email field-input" type="email" name="email" id="email"
+                placeholder="kuklachev@gmail.com">
             </li>
             <li class="contact-field__item">
               <label class="contact-field__label" for="phone">Телефон:</label>
-              <input class="contact-field__phone" type="tel" name="phone" id="phone" placeholder="8 (960)900-60-90">
+              <input class="contact-field__phone field-input" type="tel" name="phone" id="phone"
+                placeholder="8 (960)900-60-90">
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="page-form__comment comment-field">
+        <fieldset class="profile-form__comment comment-field">
           <h3 class="comment-field__title">Комментарий</h3>
-          <textarea name="comment"  cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="comment-field__description" name="comment" cols="35" rows="10"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="page-form__optionally optionally-field">
+        <fieldset class="profile-form__optionally optionally-field">
           <h3 class="optionally-field__title">Дополнительно</h3>
           <ul class="optionally-field__list">
             <li class="optionally-field__item">
@@ -108,38 +120,52 @@
             </li>
           </ul>
         </fieldset>
-        <button class="page-form__button button" type="submit">Отправить заявку</button>
-        <p>* &ndash; Обязательные поля</p>
+        <button class="profile-form__button button" type="submit">Отправить заявку</button>
+        <p class="profile-form__remark">* &ndash; Обязательные поля</p>
       </form>
     </section>
     <section class="partnership">
       <div class="partnership__wrapper">
-        <h2 class="partnership-title">Приглашаем к сотрудничеству диллеров!</h2>
-        <p class="partnership-address">
-          ул. Большая
-          Конюшенная, д. 19/8</p>
-        <p class="partnership-city">Санкт-Петербург</p>
+        <h2 class="partnership__title">Приглашаем к сотрудничеству диллеров!</h2>
+        <ul class="partnership__list">
+          <li class="partnership__item">
+            ул. Большая
+            Конюшенная, д. 19/8
+          </li>
+          <li class="partnership__item">
+            Санкт-Петербург
+          </li>
+        </ul>
       </div>
+    </section>
+    <section class="map">
       <img src="img/map-image.jpg" width="320" height="362" alt="Наше местоположение на карте">
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__logo">
-      <a class="page-footer__logo-text">
-        <img src="img/logo-text.png" width="128" height="24" alt="Название магазина Кэт энерджи">
+      <a class="page-footer__link" href="#">
+        <img class="page-footer--image" src="img/logo-text.png" width="128" height="24"
+          alt="Название магазина Кэт энерджи">
       </a>
     </div>
     <div class="page-footer__social">
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
-          <a class="social-list__link"><span>В контакте</span></a>
+          <a class="social-list__link" href="#"><span class="visually-hidden">В контакте</span>
+            <img src="img/icon/icon-vkontakte.svg" width="23" height="16" alt="Иконка сети В Контакте">
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link"><span>Инстаграм</span></a>
+          <a class="social-list__link" href="#"><span class="visually-hidden">Инстаграм</span>
+            <img src="img/icon/icon-instagram.svg" width="16" height="16" alt="Иконка инстаграм">
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link"><span>Фейсбук</span></a>
+          <a class="social-list__link" href="#"><span class="visually-hidden">Фейсбук</span>
+            <img src="img/icon/icon-facebook.svg" width="22" height="22" alt="Иконка фейсбук">
+          </a>
         </li>
       </ul>
     </div>
