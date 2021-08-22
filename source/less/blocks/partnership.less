@@ -7,6 +7,13 @@
   display: flex;
   padding: 28px 0 26px 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    justify-content: space-between;
+    padding: 62px 42px 58px;
+    margin: 0 auto;
+  }
 }
 
 .partnership__title {
@@ -17,6 +24,13 @@
   text-transform: uppercase;
   color: @basic-dark-pro;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+    height: 82px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .partnership__list {
@@ -27,4 +41,21 @@
   font-family: @font-second;
   font-size: 14px;
   line-height: 20px;
+  color: @basic-dark;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 159px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .partnership__item:first-child {
+    margin-bottom: 7px;
+  }
 }
