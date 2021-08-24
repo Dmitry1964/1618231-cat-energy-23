@@ -11,12 +11,12 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header container">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <img class="page-header__image" src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
         <img class="page-header__image" src="img/logo-text.png" width="101" height="18" alt="Название">
-        <img class="page-header__image" src="img/logo-image-tablet.png" width="174" height="52" alt="Логотип магазина">
+        <!-- <img class="page-header__image" src="img/logo-image-tablet.png" width="174" height="52" alt="Логотип магазина"> -->
         <button class="page-header__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -36,7 +36,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Кэт энерджи - итернет-магазин кормов для котов и кошечек!</h1>
 
-    <section class="page-main__header main-header">
+    <section class="page-main__header main-header container">
       <h2 class="main-header__title">Функциональное<br>питание для котов</h2>
       <p class="main-header__slogan">Занялся собой? Займись котом!</p>
       <div class="main-header__image">
@@ -47,7 +47,7 @@
       </p>
     </section>
 
-    <div class="energy-container">
+    <div class="energy-container container">
       <section class="energy-slim">
         <div class="energy-slim__wrapper">
           <img class="energy-slim__image" src="img/image-energy-slim.png" width="50" height="53" alt="Стройный кот">
@@ -79,7 +79,7 @@
     </div>
 
 
-    <section class="advantages">
+    <section class="advantages container">
       <div class="advantages-wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
@@ -119,13 +119,9 @@
       </div>
     </section>
 
-    <section class="example-title">
-      <h2 class="example-title__item">Живой пример</h2>
-    </section>
-
     <section class="example">
-      <h2 class="example__title visually-hidden">Рассмотрим Живой пример</h2>
-      <div class="example__back">
+      <h2 class="example__title"><span class="container">Живой пример</span></h2>
+      <div class="example__back container">
         <div class="example__wrapper">
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца,
@@ -136,37 +132,37 @@
             своих привычек и по&ndash;прежнему спит
             по 16 часов в день.
           </p>
-          <ul class="example__stat stat-list">
-            <li class="stat-list__item">
-              <p class="stat-list__total">5 кг</p>
-              <p class="stat-list__resume first-block">снижение<br class="stat-list__breake"> веса</p>
+          <ul class="example__list">
+            <li class="example__item">
+              <p class="example__total first-block">5 кг</p>
+              <p class="example__resume first-block">снижение<br class="example__breake"> веса</p>
             </li>
-            <li class="stat-list__item">
-              <p class="stat-list__total  second-block">60 дней</p>
-              <p class="stat-list__resume">затрачено времени</p>
+            <li class="example__item">
+              <p class="example__total  second-block">60 дней</p>
+              <p class="example__resume second-block">затрачено времени</p>
             </li>
-            <li class="stat-list__item">
-              <p class="stat-list__damage">Затраты на питание:<br class="stat-list__breake"> 15 000 руб</p>
+            <li class="example__item">
+              <p class="example__damage">Затраты на питание:<br class="example__breake"> 15 000 руб</p>
             </li>
           </ul>
         </div>
 
         <div class="example__container">
-          <img class="example__image" src="img/big-cat.png" width="311" height="232" alt="Кот в прошлой сытой жизни">
+          <img class="example__image" src="img/big-cat.png" width="280" height="232" alt="Кот в прошлой сытой жизни">
           <div class="example__result result-items">
-            <p class="result-items__itwas">Было</p>
-            <div class="result-items__scale scale-item">
-              <div class="scale-item__bar scale-item__toggle">
-                <div class="scale-item__point"></div>
+            <p class="example__itwas">Было</p>
+            <div class="example__scale scale-item">
+              <div class="example__bar scale-item__toggle">
+                <div class="example__point"></div>
               </div>
             </div>
-            <p class="result-items__now">Стало</p>
+            <p class="example__now">Стало</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="partnership">
+    <section class="partnership container">
       <div class="partnership__wrapper">
         <h2 class="partnership__title">Приглашаем к сотрудничеству диллеров!</h2>
         <ul class="partnership__list">

@@ -1,46 +1,11 @@
 .page-header {
-  padding: 10px 20px 0;
-
-  @media (min-width: @tablet-width) {
-    padding: 24px 30px 0;
-    margin-bottom: 56px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-    padding: 53px 110px 0;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__wrapper {
-    display: grid;
-    grid-template-columns: 174px 1fr;
-    justify-items: end;
-  }
+  padding-top: 10px;
 }
 
 .page-header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .page-header__image:last-of-type {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    .page-header__image {
-      display: none;
-    }
-
-    .page-header__image:last-of-type {
-      width: 174px;
-      height: 52px;
-      display: block;
-    }
-  }
 }
 
 .page-header__button {
@@ -48,21 +13,12 @@
   height: 2px;
   background-color: @basic-black;
   border: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
 }
 
 .page-header__list {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .page-header__item {
@@ -73,8 +29,35 @@
   text-align: center;
   border-top: 1px solid @light-gray;
   padding: 21px 0 24px;
+}
 
-  @media (min-width: @tablet-width) {
+.page-header__link {
+  text-decoration: none;
+  color: @basic-black;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-top: 24px;
+    margin-bottom: 56px;
+  }
+
+  .page-header__wrapper {
+    display: grid;
+    grid-template-columns: 174px 1fr;
+    justify-items: end;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__item {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -82,19 +65,22 @@
     padding: 18px 0 0;
     margin-left: 35px;
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1440px;
+    padding-top: 53px;
+  }
+
+  .page-header__item {
     font-size: 20px;
     line-height: 30px;
     color: @basic-white;
   }
-}
 
-.page-header__link {
-  text-decoration: none;
-  color: @basic-black;
-
-  @media (min-width: @desktop-width) {
+  .page-header__link {
     color: @basic-white;
   }
 }
+

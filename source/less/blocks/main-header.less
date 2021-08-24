@@ -7,24 +7,6 @@
   background-image: url(../../img/happy-cat-green.jpg);
   background-repeat: no-repeat;
   padding-top: 21px;
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    background-image: none;
-    padding-top: 0;
-    align-items: flex-start;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    position: relative;
-    top: -105px;
-    margin-bottom: -105px;
-    z-index: -10;
-  }
 }
 
 .main-header__title {
@@ -35,20 +17,6 @@
   color: @basic-white;
   margin: 0;
   margin-bottom: 24px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: start;
-    color: @basic-black;
-    margin: 0;
-    margin-left: 87px;
-    margin-bottom: 41px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 223px 0 40px 190px;
-  }
 }
 
 .main-header__slogan {
@@ -59,20 +27,6 @@
   color: @basic-white;
   margin: 0;
   margin-bottom: 29px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    color: @basic-black;
-    margin-left: 89px;
-    margin-bottom: 49px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin: 0 0 52px 190px;
-  }
 }
 
 .main-header__button {
@@ -85,8 +39,40 @@
   margin: 0;
   padding: 11px 0;
   margin-bottom: 22px;
+}
 
-  @media (min-width: @tablet-width) {
+.main-header__link {
+  text-decoration: none;
+  color: @basic-white;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 768px;
+    background-image: none;
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .main-header__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    color: @basic-black;
+    margin: 0;
+    margin-left: 87px;
+    margin-bottom: 41px;
+  }
+
+  .main-header__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-black;
+    margin-left: 89px;
+    margin-bottom: 49px;
+  }
+
+  .main-header__button {
     width: 244px;
     font-size: 20px;
     line-height: 20px;
@@ -95,25 +81,41 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: @desktop-width) {
+  .main-header__image {
+    margin: 0 auto;
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    position: relative;
+    top: -105px;
+    margin-bottom: -105px;
+    z-index: -10;
+  }
+
+  .main-header__title {
+    margin: 223px 0 40px 80px;
+  }
+
+  .main-header__slogan {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0 0 52px 190px;
+  }
+
+  .main-header__button {
     grid-column-start: 1;
     grid-column-end: 2;
     margin: 0 0 187px 190px;
   }
-}
 
-.main-header__link {
-  text-decoration: none;
-  color: @basic-white;
-}
-
-.main-header__image {
-  @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    order: 4;
-  }
-
-  @media (min-width: @desktop-width) {
+  .main-header__image {
     width: 720px;
     height: 696px;
     grid-column-start: 2;
@@ -121,5 +123,8 @@
     grid-row-start: 1;
     grid-row-end: 4;
     background-image: url(../../img/cat-background-green.png);
+    position: relative;
+    left: 110px;
   }
+
 }
