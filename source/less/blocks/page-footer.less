@@ -2,47 +2,18 @@
   background-color: @basic-gray;
 }
 
-.page-footer__wrapper {
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 55px 0 61px;
-    align-items: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 57px 0 58px;
-  }
-}
-
 .page-footer__logo {
-  padding: 39px 0 26px 0;
+  padding: 39px 0 26px;
   border-bottom: 1px solid @gray-special-pro;
   text-align: center;
-
-  @media (min-width: @tablet-width) {
-    width: 128px;
-    height: 24px;
-    padding: 0;
-    border: 0;
-  }
 }
 
 .page-footer__social {
   padding: 17px 0 18px 0;
   border-bottom: 1px solid @gray-special-pro;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    border: 0;
-  }
 }
 
-.social-list {
+.page-footer__social-list {
   width: 130px;
   display: flex;
   flex-wrap: wrap;
@@ -53,27 +24,69 @@
   margin: 0 auto;
 }
 
-.copyright-items {
+.page-footer__copyright {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 80px;
 }
 
-.copyright-items__title {
+.page-footer__copyright-title {
   font-family: @font-second;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: @basic-dark;
   margin: 0;
+  align-self: center;
+}
 
-  @media (min-width: @tablet-width) {
-    align-self: center;
-  }
+.page-footer__copyright-logo {
+  margin: 0;
+  align-self: center;
+}
+
+.page-footer__copyright-link {
+  text-decoration: none;
+  color: @basic-dark;
 }
 
 @media (min-width: @tablet-width) {
-  .copyright-items__logo {
-    margin: 0 0 0 22px;
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 128px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+  }
+
+  .page-footer__social {
+    padding: 0;
+    border: 0;
+  }
+
+  .page-footer__copyright {
+    height: auto;
+  }
+
+  .page-footer__copyright-logo {
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
