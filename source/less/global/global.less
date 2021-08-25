@@ -25,11 +25,6 @@
   font-size: 18px;
 }
 
-// .page-main {
-//   max-width: 320px;
-//   margin: 0 auto;
-// }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,4 +41,21 @@
 
 .button {
   background-color: @basic-green;
+}
+
+.container {
+  display: block;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+  }
 }
