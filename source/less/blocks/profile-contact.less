@@ -1,0 +1,147 @@
+.profile-contact {
+  border: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.profile-contact__title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: @basic-black;
+  margin: 0 0 35px;
+}
+
+.profile-contact__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-contact__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+
+  &:first-child {
+    margin-bottom: 14px;
+  }
+
+  &:first-child .field-input {
+    width: 219px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child .field-input {
+    width: 204px;
+  }
+}
+
+.profile-contact__email,
+.profile-contact__phone {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic-dark;
+  border: 1px solid @light-gray-vogue;
+  padding: 14px 15px;
+
+  &[placeholder],
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark;
+  }
+}
+
+.profile-contact__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .profile-contact {
+    margin: 0 0 65px;
+  }
+
+  .profile-contact__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 76px 40px;
+  }
+
+  .profile-contact__item {
+    width: 708px;
+    padding: 0 35px 0 40px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+
+    &:first-child .field-input {
+      width: 551px;
+    }
+
+    &:last-child .field-input {
+      width: 535px;
+    }
+  }
+
+  .profile-contact__email,
+  .profile-contact__phone {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 10px 10px 21px;
+  }
+
+  .profile-contact__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profile-contact {
+    margin: 0 0 69px;
+  }
+
+  .profile-contact__title {
+    margin: 0 0 76px 0;
+  }
+
+  .profile-contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .profile-contact__item {
+    padding: 0;
+
+    &:first-child {
+      width: 569px;
+      margin: 0;
+    }
+
+    &:last-child {
+      width: 572px;
+    }
+
+    &:first-child .field-input {
+      width: 486px;
+    }
+
+    &:last-child .field-input {
+      width: 472px;
+    }
+  }
+}
