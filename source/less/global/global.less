@@ -33,10 +33,10 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  -webkit-clip-path: inset(100%);
 }
 
 .button {
@@ -57,5 +57,19 @@
   @media (min-width: @desktop-width) {
     width: 1440px;
     padding: 0 110px;
+  }
+}
+
+.field-input {
+  padding: 14px 15px;
+
+  &[placeholder],
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark;
   }
 }

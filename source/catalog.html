@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header container">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <a href="index.html">
@@ -25,10 +25,15 @@
       </div>
       <nav class="page-header__navigation page-header__navigation--closed">
         <ul class="page-header__list">
-          <li class="page-header__item">Главная</li>
-          <li class="page-header__item active"><a class="page-header__link" href="catalog.html">Каталог продукции</a>
+          <li class="page-header__item"><a class="page-header__link page-header__catalog-link"
+              href="index.html">Главная</a></li>
+          <li class="page-header__item active"><a class="page-header__link page-header__catalog-link"
+              href="catalog.html">Каталог
+              продукции</a>
           </li>
-          <li class="page-header__item"><a class="page-header__link" href="formpage.html">Подбор программы</a>
+          <li class="page-header__item"><a class="page-header__link page-header__catalog-link"
+              href="formpage.html">Подбор
+              программы</a>
           </li>
         </ul>
       </nav>
@@ -36,247 +41,262 @@
   </header>
 
   <main class="page-main">
-    <section class="catalog-product">
-      <h2 class="catalog-product__title">Каталог продукции</h2>
-      <ul class="catalog-product__list">
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="img/cat-energy500-chicken.png" width="68" height="86"
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог продукции</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image catalog__item-image--first">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-500@2x.png" width="161" height="172"
                   alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Pro 500 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">500 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Курица</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">700 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="" width="84" height="101" alt="Банка химии со вкусом курицы кило">
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image  catalog__item-image--second">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-1000.png" width="168" height="206"
+                  alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Pro 1000 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">1000 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Курица</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">1000 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="" width="68" height="86" alt="Банка химии со вкусом рыбы полкило">
+
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image catalog__item-image--first">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-500.png" width="161" height="172"
+                  alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Pro 500 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">500 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Рыба</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">700 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="" width="84" height="101" alt="Банка химии со вкусом рыбы кило">
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image  catalog__item-image--second">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-1000.png" width="168" height="206"
+                  alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Pro 1000 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">1000 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Рыба</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">1000 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="" width="68" height="86" alt="Банка химии со вкусом гречки полкило">
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image catalog__item-image--first">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-500.png" width="161" height="172"
+                  alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Slim 500 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">500 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Гречка</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">400 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="" width="84" height="101" alt="Банка химии со вкусом гречки кило">
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image  catalog__item-image--second">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-1000.png" width="168" height="206"
+                  alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Slim 1000 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">1000 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Гречка</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">700 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__image">
-              <a class="catalog-item__image-link" href="#">
-                <img src="" width="68" height="86" alt="Банка химии со вкусом риса полкило">
+        <li class="catalog__item catalog-item">
+          <div class="catalog__item-wrapper">
+            <div class="catalog__item-image catalog__item-image--first">
+              <a class="catalog__item-image--link" href="#">
+                <img src="img/catalog/chicken-pro-500.png" width="161" height="172"
+                  alt="Банка химии со вкусом курицы полкило">
               </a>
             </div>
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Cat Energy<br>Slim 500 г</a>
+            <div class="catalog__description">
+              <h3 class="catalog__description-title">
+                <a class="catalog__description-link" href="#">Cat Energy <br class="catalog__description-breake">Pro 500
+                  г</a>
               </h3>
-              <dl class="catalog-item__list">
-                <dt class="catalog-item__key">Масса</dt>
-                <dd class="catalog-item__meaning">500 г</dd>
-                <dt class="catalog-item__key">Вкус</dt>
-                <dd class="catalog-item__meaning">Рис</dd>
-                <dt class="catalog-item__key">Цена</dt>
-                <dd class="catalog-item__meaning">500 р</dd>
+              <dl class="catalog__description-list">
+                <dt class="catalog__description-key">Масса</dt>
+                <dd class="catalog__description-meaning">500 г</dd>
+                <dt class="catalog__description-key">Вкус</dt>
+                <dd class="catalog__description-meaning">Курица</dd>
+                <dt class="catalog__description-key">Цена</dt>
+                <dd class="catalog__description-meaning">700 р</dd>
               </dl>
             </div>
-            <p class="catalog-item__button button">
-              <a class="catalog-item__link" href="">Заказать</a>
+            <p class="catalog__button button">
+              <a class="catalog__link" href="">Заказать</a>
             </p>
           </div>
         </li>
-        <li class="catalog-product__item catalog-item catalog-last-item">
-          <div class="catalog-last-item__icon"></div>
-          <h3 class="catalog-last-item__title">Пoказать еще 100500 товаров</h3>
-          <p class="catalog-last-item__description">На самом деле вкусов гораздо больше</p>
-          <p class="catalog-last-item__button">
-            <a class="catalog-last-item__link" href="">Показать все</a>
+
+
+        <li class="catalog__item catalog__last-item">
+          <div class="catalog__item-icon"></div>
+          <h3 class="catalog__item-title">Пoказать еще 100500 товаров</h3>
+          <p class="catalog__item-description">На самом деле вкусов гораздо больше</p>
+          <p class="catalog__item-button">
+            <a class="catalog__item-link" href="">Показать все</a>
           </p>
         </li>
       </ul>
     </section>
-    <section class="catalog-optionally">
-      <h2 class="catalog-optionally__title">Дополнительные товары</h2>
-      <ul class="catalog-optionally__list">
-        <li class="catalog-optionally__item optionally-item">
-          <h3 class="optionally-item__title">Сахарозаменитель</h3>
-          <dl class="optionally-item__list">
-            <dt class="optionally-item__key">1 упаковка (100 г)</dt>
-            <dd class="optionally-item__meaning">200 р.</dd>
+    <section class="optionally container">
+      <h2 class="optionally__title">Дополнительные товары</h2>
+      <ul class="optionally__list">
+        <li class="optionally__item optionally-item">
+          <h3 class="optionally__item-title">Сахарозаменитель</h3>
+          <dl class="optionally__item-list">
+            <dt class="optionally__item-key">1 упаковка (100 г)</dt>
+            <dd class="optionally__item-meaning">200 р.</dd>
           </dl>
-          <p class="optionally-item__button button">
-            <a class="optionally-item__link" href="">Заказать</a>
+          <p class="optionally__item-button button">
+            <a class="optionally__item-link" href="#">Заказать</a>
           </p>
         </li>
-        <li class="catalog-optionally__item optionally-item">
-          <h3 class="optionally-item__title">Питьевая вода</h3>
-          <dl class="optionally-item__list">
-            <dt class="optionally-item__key">5 литров</dt>
-            <dd class="optionally-item__meaning">50 р.</dd>
+        <li class="optionally__item optionally-item">
+          <h3 class="optionally__item-title">Питьевая вода</h3>
+          <dl class="optionally__item-list">
+            <dt class="optionally__item-key">5 литров</dt>
+            <dd class="optionally__item-meaning">50 р.</dd>
           </dl>
-          <p class="optionally-item__button button">
-            <a class="optionally-item__link" href="">Заказать</a>
+          <p class="optionally__item-button button">
+            <a class="optionally__item-link" href="">Заказать</a>
           </p>
         </li>
-        <li class="catalog-optionally__item optionally-item">
-          <h3 class="optionally-item__title">Молоко</h3>
-          <dl class="optionally-item__list">
-            <dt class="optionally-item__key">1 литр</dt>
-            <dd class="optionally-item__meaning">100 р.</dd>
+        <li class="optionally__item optionally-item">
+          <h3 class="optionally__item-title">Молоко</h3>
+          <dl class="optionally__item-list">
+            <dt class="optionally__item-key">1 литр</dt>
+            <dd class="optionally__item-meaning">100 р.</dd>
           </dl>
-          <p class="optionally-item__button button">
-            <a class="optionally-item__link" href="">Заказать</a>
+          <p class="optionally__item-button button">
+            <a class="optionally__item-link" href="">Заказать</a>
           </p>
         </li>
-        <li class="catalog-optionally__item optionally-item">
-          <h3 class="optionally-item__title">Витамины</h3>
-          <dl class="optionally-item__list">
-            <dt class="optionally-item__key">1 упаковка (30 г)</dt>
-            <dd class="optionally-item__meaning">300 р.</dd>
+        <li class="optionally__item optionally-item">
+          <h3 class="optionally__item-title">Витамины</h3>
+          <dl class="optionally__item-list">
+            <dt class="optionally__item-key">1 упаковка (30 г)</dt>
+            <dd class="optionally__item-meaning">300 р.</dd>
           </dl>
-          <p class="optionally-item__button button">
-            <a class="optionally-item__link" href="">Заказать</a>
+          <p class="optionally__item-button button">
+            <a class="optionally__item-link" href="">Заказать</a>
           </p>
         </li>
       </ul>
+      <div class="optionally__offer">
+        <div class="optionally__offer-icon"></div>
+        <h2 class="optionally__offer-title">Закажите все и получите чехол для кота в подарок</h2>
+      </div>
     </section>
 
-    <section class="catalog-offer">
-      <div class="catalog-offer__icon"></div>
-      <h2 class="catalog-offer__title">Закажите все и получите чехол для кота в подарок</h2>
-    </section>
-
-    <section class="partnership">
+    <section class="partnership partnership-background">
       <div class="partnership__wrapper">
         <h2 class="partnership__title">Приглашаем к сотрудничеству диллеров!</h2>
         <ul class="partnership__list">
@@ -297,42 +317,47 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__logo">
-      <a class="page-footer__link" href="#">
-        <img class="page-footer--image" src="img/logo-text.png" width="128" height="24"
-          alt="Название магазина Кэт энерджи">
-      </a>
-    </div>
-    <div class="page-footer__social">
-      <ul class="page-footer__list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><span class="visually-hidden">В контакте</span>
-            <img src="img/icon/icon-vkontakte.svg" width="23" height="16" alt="Иконка сети В Контакте">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><span class="visually-hidden">Инстаграм</span>
-            <img src="img/icon/icon-instagram.svg" width="16" height="16" alt="Иконка инстаграм">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><span class="visually-hidden">Фейсбук</span>
-            <img src="img/icon/icon-facebook.svg" width="22" height="22" alt="Иконка фейсбук">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright-items">
-      <p class="copyright-items__title">HTML Academy</p>
-      <p class="copyright-items__logo">
-        <a href="">
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-              fill="#666666" />
-          </svg>
+    <div class="page-footer__wrapper container">
+      <div class="page-footer__logo">
+        <a class="page-footer__link" href="#">
+          <img class="page-footer--image" src="img/logo-text.png" width="128" height="24"
+            alt="Название магазина Кэт энерджи">
         </a>
-      </p>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__social-list social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#"><span class="visually-hidden">В контакте</span>
+              <img src="img/icon/icon-vkontakte.svg" width="23" height="16" alt="Иконка сети В Контакте">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#"><span class="visually-hidden">Инстаграм</span>
+              <img src="img/icon/icon-instagram.svg" width="16" height="16" alt="Иконка инстаграм">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#"><span class="visually-hidden">Фейсбук</span>
+              <img src="img/icon/icon-facebook.svg" width="22" height="22" alt="Иконка фейсбук">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright-items">
+        <p class="page-footer__copyright-title">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </p>
+        <p class="page-footer__copyright-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                fill="#666666" />
+            </svg>
+          </a>
+        </p>
+      </div>
+
     </div>
   </footer>
 </body>

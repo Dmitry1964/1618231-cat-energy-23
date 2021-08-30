@@ -39,17 +39,20 @@
 @media (min-width: @tablet-width) {
   .page-header {
     padding-top: 24px;
-    margin-bottom: 56px;
   }
 
   .page-header__wrapper {
     display: grid;
     grid-template-columns: 174px 1fr;
-    justify-items: end;
+    height: 52px;
   }
 
   .page-header__button {
     display: none;
+  }
+
+  .page-header__navigation {
+    justify-self: end;
   }
 
   .page-header__list {
@@ -62,7 +65,6 @@
     line-height: 24px;
     font-weight: 400;
     border: none;
-    padding: 18px 0 0;
     margin-left: 35px;
   }
 }
@@ -73,6 +75,10 @@
     padding-top: 53px;
   }
 
+  .page-header__wrapper {
+    height: 60px;
+  }
+
   .page-header__item {
     font-size: 20px;
     line-height: 30px;
@@ -81,6 +87,10 @@
 
   .page-header__link {
     color: @basic-white;
+  }
+
+  .page-header__catalog-link {
+    color: @basic-dark-pro;
   }
 }
 
