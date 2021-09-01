@@ -68,13 +68,43 @@
     border: 0;
   }
 
+  .page-footer__image {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   .page-footer__social {
     padding: 0;
     border: 0;
   }
 
+  .page-footer__social-image {
+    &:hover path {
+      stroke: @basic-green;
+    }
+
+    &:active path {
+      // fill: @basic-green;
+      opacity: 0.3;
+    }
+  }
+
   .page-footer__copyright {
     height: auto;
+
+    &:hover .page-footer__copyright-image path {
+      fill: @basic-green;
+    }
+
+    &:active .page-footer__copyright-image,
+    &:active .page-footer__copyright-title {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__copyright-logo {

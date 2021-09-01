@@ -27,7 +27,7 @@
   line-height: 18px;
   font-weight: 400;
   color: @basic-dark;
-  margin: 22px 0 38px;
+  margin: 22px 0 40px;
 }
 
 .energy-slim__link {
@@ -36,6 +36,21 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @basic-black;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background-image: url(../../img/icon/icon-arrow.svg);
+    top: calc(50% - 6px);
+    left: 100px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -72,6 +87,11 @@
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 8px;
+
+    &::after {
+      top: calc(50% - 9px);
+      left: 133px;
+    }
   }
 
   .energy-slim__image {
@@ -106,6 +126,11 @@
 
   .energy-slim__link {
     padding: 0;
+
+    &::after {
+      top: calc(50% - 6px);
+      left: 136px;
+    }
   }
 
   .energy-slim__image {
