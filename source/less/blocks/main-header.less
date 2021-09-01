@@ -6,7 +6,7 @@
   margin: 0 auto;
   background-image: url(../../img/happy-cat-green.jpg);
   background-repeat: no-repeat;
-  padding-top: 21px;
+  padding-top: 27px;
 }
 
 .main-header__title {
@@ -16,7 +16,7 @@
   text-align: center;
   color: @basic-white;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .main-header__slogan {
@@ -38,7 +38,11 @@
   text-transform: uppercase;
   margin: 0;
   padding: 11px 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+
+  &:active .main-header__link {
+    opacity: 0.3;
+  }
 }
 
 .main-header__link {
@@ -91,11 +95,11 @@
   .main-header {
     width: 1440px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 610px 610px;
     grid-template-rows: auto auto auto;
-    position: relative;
-    top: -105px;
-    margin-bottom: -105px;
+    // position: relative;
+    // top: -105px;
+    // margin-bottom: -105px;
     z-index: -10;
   }
 
@@ -113,19 +117,19 @@
     grid-column-start: 1;
     grid-column-end: 2;
     margin: 0 0 187px 80px;
+    cursor: pointer;
+
   }
 
   .main-header__image {
-    width: 60vw;
+    width: 50vw;
     height: 696px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
-    background-image: url(../../img/cat-background-green.png);
+    background-image: url(../../img/cat-background-big@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    left: 110px;
   }
 }

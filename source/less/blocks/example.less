@@ -197,14 +197,35 @@
     top: -50px;
   }
 
+  .example__result{
+    &:hover .example__itwas {
+      border-bottom: 1px solid @basic-black-opacity40;
+    }
+
+    &:hover .example__now {
+      border-bottom: 1px solid @basic-black-opacity40;
+    }
+
+    &:active .example__itwas {
+      border: none;
+    }
+
+    &:active .example__now {
+      border: none;
+    }
+
+  }
+
   .example__itwas {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted @basic-black-opacity24;
   }
 
   .example__now {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted @basic-black-opacity24;
   }
 
   .example__scale {
@@ -226,6 +247,18 @@
     position: relative;
     top: -17px;
     left: 40%;
+    filter: drop-shadow(0 1px 3px @basic-black-opacity16);
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      filter: drop-shadow(0px 2px 4px @basic-black-opacity19);
+    }
+
+    &:active {
+      border: 1px solid @basic-green;
+      filter: drop-shadow(0px 3px 5px @basic-black-opacity20);
+    }
   }
 
   .example__point {

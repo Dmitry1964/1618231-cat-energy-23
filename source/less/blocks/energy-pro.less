@@ -1,5 +1,5 @@
 .energy-pro {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 .energy-pro__wrapper {
@@ -20,6 +20,11 @@
   margin-left: 19px;
 }
 
+.energy-pro__image {
+  margin-left: -10px;
+  margin-right: -5px;
+}
+
 .energy-pro__description {
   position: relative;
   font-family: @font-second;
@@ -27,7 +32,7 @@
   line-height: 18px;
   font-weight: 400;
   color: @basic-dark;
-  margin: 22px 0 38px;
+  margin: 22px 0 40px;
 }
 
 .energy-pro__link {
@@ -36,6 +41,21 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @basic-black;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background-image: url(../../img/icon/icon-arrow.svg);
+    top: calc(50% - 6px);
+    left: 100px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -67,11 +87,17 @@
   }
 
   .energy-pro__link {
+    // display: block;
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 8px;
+
+    &::after {
+      top: calc(50% - 9px);
+      left: 133px;
+    }
   }
 
   .energy-pro__image {
@@ -106,6 +132,11 @@
 
   .energy-pro__link {
     padding: 0;
+
+    &::after {
+      left: 136px;
+      top: calc(50% - 6px);
+    }
   }
 
   .energy-pro__image {
