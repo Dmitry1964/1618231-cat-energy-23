@@ -80,10 +80,19 @@
   display: none;
 }
 
+.example__wrapper {
+  padding: 0 20px;
+}
+
 .example__image {
-  display: block;
-  object-fit: cover;
+  width: 280px;
   margin: 0 auto;
+}
+
+.example__image-item {
+  display: block;
+  position: relative;
+  left: -20px;
 }
 
 .example__result {
@@ -145,7 +154,8 @@
   }
 
   .example__list {
-    margin-bottom: 59px;
+    margin-bottom: 250px;
+    align-items: flex-end;
   }
 
   .example__item:nth-child(2) {
@@ -181,20 +191,35 @@
   }
 
   .example__damage {
+    font-size: 20px;
+    line-height: 29px;
     text-align: end;
+    margin: 0;
+
+    .example__breake {
+      display: block;
+    }
   }
 
-  .example__breake {
-    display: block;
+  .example__wrapper {
+    padding: 0 30px;
   }
+
 
   .example__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 462px;
     background-color: @gray-special;
+    position: relative;
   }
 
   .example__image {
-    position: relative;
-    top: -50px;
+    width: 708px;
+    position: absolute;
+    left: calc(50% - 310px);
+    top: -191px;
   }
 
   .example__result{
@@ -213,7 +238,6 @@
     &:active .example__now {
       border: none;
     }
-
   }
 
   .example__itwas {
@@ -275,14 +299,24 @@
   }
 
   .example__title {
-    padding: 58px 110px 78px;
+    padding: 58px 0 76px;
     background-color: @basic-white;
   }
 
   .example__back {
+    width: 1440px;
+    padding: 0 110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 436px 1fr;
+  }
+
+  .example__wrapper {
+    padding: 0;
+  }
+
+  .example__container {
+    justify-self: end;
   }
 
   .example__description {
@@ -296,11 +330,39 @@
     margin: 0;
   }
 
-  .example__item:nth-child(2) {
-    margin-left: 42px;
+  .example__item {
+    &:nth-child(2) {
+      margin-left: 42px;
+    }
+
+    &:last-child {
+      margin-top: 55px;
+    }
+
+    &:last-child .example__breake {
+      display: none;
+      width: 55px;
+    }
+  }
+
+  .example__space {
+    display: inline-block;
+    width: 63px;
+  }
+
+  .example__damage {
+    line-height: 20px;
   }
 
   .example__resume {
     background-color: @gray-special;
+  }
+
+  .example__image {
+    left: -60px;
+  }
+
+  .example__result {
+    padding: 0 0 64px 0;
   }
 }

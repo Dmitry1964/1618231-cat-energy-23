@@ -11,30 +11,22 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
+  <header class="page-header page-header--index container">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <a href="index.html">
-          <img src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
-        </a>
-        <a href="index.html">
-          <img src="img/logo-text.png" width="101" height="18" alt="Название">
-        </a>
+        <img class="page-header__image" src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
+        <img class="page-header__image" src="img/logo-text.png" width="101" height="18" alt="Название">
+        <img class="page-header__image" src="img/logo-image-tablet.png" width="174" height="52" alt="Логотип магазина">
         <button class="page-header__button page-header__button--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="page-header__navigation page-header__navigation--closed  page-header__navigation--nojs">
+      <nav class="page-header__navigation page-header__navigation--closed page-header__navigation--nojs">
         <ul class="page-header__list">
-          <li class="page-header__item"><a class="page-header__link page-header__catalog-link"
-              href="index.html">Главная</a></li>
-          <li class="page-header__item"><a class="page-header__link page-header__catalog-link"
-              href="catalog.html">Каталог
-              продукции</a>
+          <li class="page-header__item active"><a class="page-header__link">Главная</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="page-header__item active active-desktop"><a class="page-header__link page-header__catalog-link"
-              href="formpage.html">Подбор
-              программы</a>
+          <li class="page-header__item"><a class="page-header__link" href="formpage.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -69,15 +61,17 @@
           <fieldset class="profile-target target-field">
             <ul class="profile-target__list">
               <li class="profile-target__item">
-                <input class="profile-target__radio-input" type="radio" name="cat-target" id="thin-cat" checked>
+                <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target" id="thin-cat"
+                  checked>
                 <label class="profile-target__label" for="thin-cat">Похудение</label>
               </li>
               <li class="profile-target__item">
-                <input class="profile-target__radio-input" type="radio" name="cat-target" id="hard-cat">
+                <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target" id="hard-cat">
                 <label class="profile-target__label" for="hard-cat">Набор массы</label>
               </li>
               <li class="profile-target__item">
-                <input class="profile-target__radio-input" type="radio" name="cat-target" id="middle-cat">
+                <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target"
+                  id="middle-cat" disabled>
                 <label class="profile-target__label" for="middle-cat">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -91,11 +85,17 @@
               <label class="profile-contact__label" for="email">e-mail:*</label>
               <input class="profile-contact__email field-input" type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com">
+              <svg class="profile-contact__icon-email" width="20" height="15" fill="none">
+                <use xlink:href="img/sprite.svg#icon-covert"></use>
+              </svg>
             </li>
             <li class="profile-contact__item">
               <label class="profile-contact__label" for="phone">Телефон:*</label>
               <input class="profile-contact__phone field-input" type="tel" name="phone" id="phone"
                 placeholder="8 (960)900-60-90">
+              <svg class="profile-contact__icon-phone" width="20" height="21" fill="none">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
@@ -110,19 +110,21 @@
           <h3 class="profile-optionally__title">Дополнительно</h3>
           <ul class="profile-optionally__list">
             <li class="profile-optionally__item">
-              <input type="checkbox" name="pseudo-sugar" id="pseudo-sugar">
+              <input class="profile-optionally__field-input visually-hidden" type="checkbox" name="pseudo-sugar"
+                id="pseudo-sugar">
               <label class="profile-optionally__label" for="pseudo-sugar">Сахарозаменитель</label>
             </li>
             <li class="profile-optionally__item">
-              <input type="checkbox" name="water" id="water">
+              <input class="profile-optionally__field-input visually-hidden" type="checkbox" name="water" id="water">
               <label class="profile-optionally__label" for="water">Питьевая вода</label>
             </li>
             <li class="profile-optionally__item">
-              <input type="checkbox" name="milk" id="milk">
+              <input class="profile-optionally__field-input visually-hidden" type="checkbox" name="milk" id="milk">
               <label class="profile-optionally__label" for="milk">Молоко</label>
             </li>
             <li class="profile-optionally__item">
-              <input type="checkbox" name="vitamins" id="vitamins">
+              <input class="profile-optionally__field-input visually-hidden" type="checkbox" name="vitamins"
+                id="vitamins" disabled checked>
               <label class="profile-optionally__label" for="vitamins">Витамины</label>
             </li>
           </ul>

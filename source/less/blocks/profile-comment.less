@@ -10,7 +10,29 @@
   font-weight: 400;
   color: @basic-black;
   margin: 0 0 38px;
+  position: relative;
 }
+
+.profile-comment__title::after {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  height: 2px;
+  background-color: @basic-green;
+  top: 50%;
+  left: 143px;
+}
+
+.profile-comment__title::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 2px;
+  background-color: @basic-green;
+  top: 50%;
+  right: 310px;
+}
+
 
 .profile-comment__description {
   width: 280px;
@@ -38,6 +60,15 @@
     margin: 0 0 76px 40px;
   }
 
+  .profile-comment__title::after {
+    left: 220px;
+    width: 70vw;
+  }
+
+  .profile-comment__title::before {
+    right: 707px;
+  }
+
   .profile-comment__description {
     width: 631px;
     height: 174px;
@@ -55,6 +86,10 @@
 
   .profile-comment__title {
     margin: 0 0 76px 0;
+  }
+
+  .profile-comment__title::before {
+    right: 1260px;
   }
 
   .profile-comment__description {

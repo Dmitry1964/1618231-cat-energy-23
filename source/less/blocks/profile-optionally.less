@@ -5,18 +5,39 @@
 }
 
 .profile-optionally__title {
-  font-style: 24px;
+  font-size: 24px;
   line-height: 26px;
   font-weight: 400;
-  text-transform: uppercase;
   color: @basic-black;
   margin: 0 0 34px;
+  position: relative;
 }
+
+.profile-optionally__title::after {
+  content: "";
+  position: absolute;
+  width: 70vw;
+  height: 2px;
+  background-color: @basic-green;
+  top: 50%;
+  left: 164px;
+}
+
+.profile-optionally__title::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 2px;
+  background-color: @basic-green;
+  top: 50%;
+  right: 310px;
+}
+
 
 .profile-optionally__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 46px;
 }
 
 .profile-optionally__item {
@@ -25,9 +46,34 @@
   text-transform: uppercase;
   color: @basic-black;
   margin-bottom: 20px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  .profile-optionally__field-input + label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @light-gray-vogue;
+    top: calc(50% - 15px);
+    left: -46px;
+  }
+
+  .profile-optionally__field-input:checked + label::before {
+    background-image: url(../../img/icon/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .profile-optionally__field-input:disabled + label {
+    opacity: 0.3;
+  }
+
+  .profile-optionally__field-input + label:hover::before {
+    border-color: @light-gray-style-crazy;
   }
 }
 
@@ -41,6 +87,17 @@
     line-height: 36px;
     margin: 0 0 57px 40px;
   }
+
+  .profile-optionally__title::after {
+    left: 252px;
+    top: 50%;
+  }
+
+  .profile-optionally__title::before {
+    right: 707px;
+    top: 50%;
+  }
+
 
   .profile-optionally__list {
     width: 565px;
@@ -74,10 +131,22 @@
     margin: 0 0 57px;
   }
 
+  .profile-optionally__title::after {
+    left: 252px;
+    top: 50%;
+  }
+
+  .profile-optionally__title::before {
+    right: 1260px;
+    top: 50%;
+  }
+
+
   .profile-optionally__list {
     width: 1220px;
     justify-content: start;
     margin: 0;
+    padding: 0;
   }
 
   .profile-optionally__item {
