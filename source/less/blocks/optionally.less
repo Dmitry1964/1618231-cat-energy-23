@@ -72,9 +72,26 @@
 }
 
 .optionally__offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 280px;
   height: 289px;
-  background-color: @basic-green;
+  background-image: url(../../img/background/cat-background-box.png);
+  background-repeat: no-repeat;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/background/cat-background-box@2x.png);
+    background-size: 280px auto;
+  }
+}
+
+.optionally__offer-icon {
+  width: 78px;
+  height: 80px;
+  margin: 59px 0 48px 0;
 }
 
 .optionally__offer-title {
@@ -84,8 +101,8 @@
   line-height: 20px;
   font-weight: 400;
   color: @basic-white;
-  margin: 0 auto;
   text-align: center;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -144,6 +161,18 @@
   .optionally__offer {
     width: 708px;
     height: 200px;
+    background-image: url(../../img/background/cat-box-tablet.png);
+    background-repeat: no-repeat;
+    flex-direction: row;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/background/cat-box-tablet@2x.png);
+      background-size: 708px auto;
+    }
+  }
+
+  .optionally__offer-icon {
+    margin: 0 265px 0 77px;
   }
 }
 
@@ -195,6 +224,19 @@
 
   .optionally__offer {
     width: 245px;
-    height: 285px;
+    height: 289px;
+    background-image: url(../../img/background/cat-box-desktop.png);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/background/cat-box-desktop@2x.png);
+      background-size: 245px auto;
+    }
+  }
+
+  .optionally__offer-icon {
+    margin: 55px 0 46px 0;;
   }
 }

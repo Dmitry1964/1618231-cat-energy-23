@@ -17,10 +17,6 @@
   align-items: center;
   margin-bottom: 14px;
 
-  .field-input {
-    border: 1px solid @gray-super-puper;
-  }
-
   &:first-child .field-input {
     width: 229px;
   }
@@ -35,6 +31,18 @@
 
   &:last-child .field-input {
     width: 172px;
+  }
+}
+
+.profile-person__field {
+  border: 1px solid @gray-super-puper;
+
+  &:hover {
+    border-color: @light-gray-vogue;
+  }
+
+  &:focus {
+    border-color: @basic-dark;
   }
 }
 

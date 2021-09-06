@@ -15,5 +15,3 @@ headerButton.addEventListener("click", function () {
     pageNavigation.classList.add("page-header__navigation--closed");
   }
 })
-
-console.log(pageNavigation);
