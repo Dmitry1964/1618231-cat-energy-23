@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -13,19 +14,26 @@
   <header class="page-header page-header--index container">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img class="page-header__image" src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
-        <img class="page-header__image" src="img/logo-text.png" width="101" height="18" alt="Название">
-        <img class="page-header__image" src="img/logo-image-tablet.png" width="174" height="52" alt="Логотип магазина">
+        <a href="index.html">
+          <div class="page-header__image-link">
+            <img class="page-header__image" src="img/logo-image-mobile.png" width="34" height="38" alt="Logo">
+            <img class="page-header__image" src="img/logo-text.png" width="101" height="18" alt="Название">
+            <img class="page-header__image" src="img/logo-image-tablet.png" width="174" height="52"
+              alt="Логотип магазина">
+          </div>
+        </a>
         <button class="page-header__button page-header__button--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
       <nav class="page-header__navigation page-header__navigation--closed page-header__navigation--nojs">
         <ul class="page-header__list">
-          <li class="page-header__item active"><a class="page-header__link">Главная</a></li>
-          <li class="page-header__item"><a class="page-header__link" href="catalog.html">Каталог продукции</a>
+          <li class="page-header__item active"><a class="page-header__link  page-header__link--index">Главная</a></li>
+          <li class="page-header__item"><a class="page-header__link page-header__link--index"
+              href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="page-header__item"><a class="page-header__link" href="formpage.html">Подбор программы</a>
+          <li class="page-header__item"><a class="page-header__link page-header__link--index"
+              href="formpage.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +62,7 @@
     <div class="energy-container container">
       <section class="energy-slim">
         <div class="energy-slim__wrapper">
-          <img class="energy-slim__image" src="img/image-energy-slim.png" width="50" height="53" alt="Стройный кот">
+          <img class="energy-slim__image" src="img/cat-slim.svg" width="50" height="53" alt="Стройный кот">
           <h2 class="energy-slim__title">Похудение</h2>
           <p class="energy-slim__description">
             Ваш кот весит больше собаки и почти
@@ -69,7 +77,7 @@
 
       <section class="energy-pro">
         <div class="energy-pro__wrapper">
-          <img class="energy-pro__image" src="img/image-energy-pro.png" width="67" height="50" alt="Стройный кот">
+          <img class="energy-pro__image" src="img/cat-pro.svg" width="67" height="50" alt="Стройный кот">
           <h2 class="energy-pro__title">Набор массы</h2>
           <p class="energy-pro__description">
             Заработать авторитет среди
@@ -174,26 +182,36 @@
       </div>
     </section>
 
-    <section class="partnership container">
-      <div class="partnership__wrapper">
-        <h2 class="partnership__title">Приглашаем к сотрудничеству диллеров!</h2>
-        <ul class="partnership__list">
-          <li class="partnership__item">
-            ул. Большая
-            Конюшенная, д. 19/8
-          </li>
-          <li class="partnership__item">
-            Санкт-Петербург
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта местности</h2>
-      <!-- <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630777449405!5m2!1sru!2sru"
-        width="1440" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-    </section>
+    <div class="section-wrapper">
+      <section class="partnership container">
+        <div class="partnership__wrapper">
+          <h2 class="partnership__title">Приглашаем к сотрудничеству диллеров!</h2>
+          <ul class="partnership__list">
+            <li class="partnership__item">
+              ул. Большая
+              Конюшенная, д. 19/8
+            </li>
+            <li class="partnership__item">
+              Санкт-Петербург
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта местности</h2>
+        <div class="map">
+          <iframe class="map__item"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.62921397001!2d30.324184655363997!3d59.93829459247735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1630987409401!5m2!1sru!2sru"
+            style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/icon/icon-point-tablet.svg">
+            <img class="map__item-point" src="img/icon/icon-point.svg" alt="Логотип кэт-энерджи">
+          </picture>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">

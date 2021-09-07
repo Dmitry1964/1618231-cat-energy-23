@@ -1,9 +1,36 @@
 .map {
-  width: 320px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 362px;
 
-  @media (min-width: @tablet-width) {
-    width: 768px;
+}
+
+.map__item {
+  width: 100%;
+  height: 362px;
+  position: relative;
+}
+
+.map__item-point {
+  position: absolute;
+  left: calc(50% - 28px);
+  top: calc(50% - 26px);
+}
+
+@media (min-width: @tablet-width) {
+  .map__item {
     height: 400px;
   }
+
+  .map__item-point {
+    left: calc(50% - 56px);
+    top: calc(50% - 53px);
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .map__item-point {
+    left: calc(50% + 188px);
+  }
+}
+
