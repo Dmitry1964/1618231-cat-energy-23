@@ -3,7 +3,7 @@
   border-top: 1px solid @gray-special-pro;
   border-bottom: 1px solid @gray-special-pro;
   padding: 22px 0 20px;
-  margin: 0 0 26px 0;
+  margin: 0 0 24px 0;
 }
 
 .profile-target__list {
@@ -13,7 +13,7 @@
 }
 
 .profile-target__item {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   position: relative;
 
   &:last-child {
@@ -57,7 +57,7 @@
 @media (min-width: @tablet-width) {
   .profile-target {
     padding: 0;
-    margin: 0 0 71px 0;
+    margin: 0 0 80px 0;
     border: 0;
   }
 
@@ -68,6 +68,10 @@
     padding: 25px 0 25px 89px;
   }
 
+  .profile-target__item {
+    margin-bottom: 23px;
+  }
+
 
   .profile-target__label {
     font-size: 20px;
@@ -75,15 +79,21 @@
   }
 
   .profile-target__radio-input + label::before {
+    width: 40px;
+    height: 40px;
     left: -60px;
   }
+
 
   .profile-target__radio-input + label:hover::before {
     border-color: @light-gray-style-crazy;
   }
 
   .profile-target__radio-input:checked + label::after {
-    left: -52px;
+    width: 18px;
+    height: 18px;
+    left: -49px;
+    top: 11px;
   }
 }
 
@@ -96,11 +106,11 @@
   .profile-target__list {
     width: inherit;
     height: 196px;
-    padding: 24px 0 24px 88px;
+    padding: 26px 0 24px 88px;
   }
 
   .profile-target__item {
-    height: 40px;
+    height: 30px;
   }
 }
 

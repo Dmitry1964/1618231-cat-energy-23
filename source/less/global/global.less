@@ -53,6 +53,42 @@
   padding: 0 20px;
   margin: 0 auto;
 
+  .field-input {
+    padding: 13px 15px 15px;
+  }
+
+  .field-input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark;
+    letter-spacing: -0.02em;
+  }
+
+  .field-input::-moz-placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark;
+    letter-spacing: -0.02em;
+  }
+  .field-input:-moz-placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark;
+    letter-spacing: -0.02em;
+  }
+  .field-input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark;
+    letter-spacing: -0.02em;
+  }
+
+
+
   @media (min-width: @tablet-width) {
     width: 768px;
     padding: 0 30px;
@@ -62,34 +98,4 @@
     width: 1440px;
     padding: 0 110px;
   }
-}
-
-.field-input::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @basic-dark;
-  letter-spacing: -0.02em;
-}
-
-.field-input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @basic-dark;
-  letter-spacing: -0.02em;
-}
-.field-input:-moz-placeholder {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @basic-dark;
-  letter-spacing: -0.02em;
-}
-.field-input:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @basic-dark;
-  letter-spacing: -0.02em;
 }

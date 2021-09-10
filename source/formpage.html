@@ -50,12 +50,12 @@
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-name">Имя:*</label>
                 <input class="profile-person__field field-input" type="text" name="cat-name" id="cat-name"
-                  placeholder="Барсик">
+                  pattern="[а-яёА-ЯЁ]*" placeholder="Барсик">
               </li>
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-weight">Вес (кг):*</label>
                 <input class="profile-person__field field-input" type="text" name="cat-age" id="cat-weight"
-                  placeholder="7">
+                  pattern="[1-9]{2}" placeholder="7">
               </li>
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-age">Возраст (лет):</label>
@@ -95,7 +95,7 @@
             <li class="profile-contact__item">
               <label class="profile-contact__label" for="phone">Телефон:*</label>
               <input class="profile-contact__phone field-input" type="tel" name="phone" id="phone"
-                placeholder="8 (960)900-60-90">
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </fieldset>
@@ -156,7 +156,7 @@
         <div class="map">
           <iframe class="map__item"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.62921397001!2d30.324184655363997!3d59.93829459247735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1630987409401!5m2!1sru!2sru"
-            style="border:0;" allowfullscreen="" loading="lazy">
+            style="border: 0;" allowfullscreen="" loading="lazy">
           </iframe>
           <picture>
             <source media="(min-width: 768px)" srcset="img/icon/icon-point-tablet.svg">
