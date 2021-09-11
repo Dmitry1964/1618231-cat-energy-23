@@ -1,5 +1,5 @@
 .optionally {
-  padding-top: 25px;
+  padding-top: 23px;
   margin: 0 auto;
 }
 
@@ -8,7 +8,7 @@
   line-height: 24px;
   font-weight: 400;
   color: @basic-black;
-  margin-bottom: 36px;
+  margin: 0 0 36px 0;
 }
 
 .optionally__list {
@@ -19,6 +19,7 @@
 
 .optionally__item {
   border-top: 1px solid @light-gray-vogue;
+  padding: 12px 0 18px;
 
   &:last-child {
     border-bottom: 1px solid @light-gray-vogue;
@@ -31,7 +32,7 @@
   text-transform: uppercase;
   font-weight: 400;
   color: @basic-dark-vogue;
-  margin: 13px 0;
+  margin: 0 0 13px 0;
 }
 
 .optionally__item-list {
@@ -63,7 +64,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 10px 0;
-  margin: 0 0 19px;
+  margin: 0;
 }
 
 .optionally__item-link {
@@ -80,6 +81,7 @@
   height: 289px;
   background-image: url(../../img/background/cat-background-box.png);
   background-repeat: no-repeat;
+  margin-bottom: 35px;
 
 
   @media (min-resolution: 2dppx) {
@@ -112,7 +114,7 @@
   }
 
   .optionally__list {
-    margin-bottom: 69px;
+    margin-bottom: 66px;
   }
 
   .optionally__title {
@@ -132,11 +134,11 @@
   .optionally__item-title {
     font-size: 20px;
     line-height: 20px;
-    margin: 26px 0 25px 38px;
+    margin: 12px 0 25px 38px;
   }
 
   .optionally__item-list {
-    margin: 30px 38px 0 0;
+    margin: 15px 38px 0 0;
   }
 
   .optionally__item-key {
@@ -154,7 +156,7 @@
     font-size: 16px;
     line-height: 16px;
     width: 632px;
-    margin: 0 auto 28px;
+    margin: 0 auto 11px;
     padding: 12px 0;
   }
 
@@ -174,11 +176,15 @@
   .optionally__offer-icon {
     margin: 0 265px 0 77px;
   }
+
+  .optionally__offer-title {
+    text-align: start;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .optionally {
-    margin-bottom: 86px;
+    margin-bottom: 50px;
     padding-top: 11px;
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +199,7 @@
   .optionally__list {
     width: 896px;
     margin: 0;
+    align-self: flex-start;
   }
 
   .optionally__item {
@@ -209,17 +216,24 @@
   }
 
   .optionally__item-list {
-    margin: 0 38px 0 0;
+    margin: 10px 38px 0 0;
     width: 288px;
   }
 
   .optionally__item-meaning {
-    margin-left: 112px;
+    width: 45px;
+    margin: 0;
+    // margin-left: 112px;
+    text-align: left;
   }
 
   .optionally__item-button {
     width: 244px;
     margin: 0;
+  }
+
+  .optionally__offer-title {
+    text-align: center;
   }
 
   .optionally__offer {

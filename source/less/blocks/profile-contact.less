@@ -1,6 +1,6 @@
 .profile-contact {
   border: none;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   padding: 0;
 }
 
@@ -9,7 +9,7 @@
   line-height: 26px;
   font-weight: 400;
   color: @basic-black;
-  margin: 0 0 35px;
+  margin: 0 0 33px;
   position: relative;
 }
 
@@ -65,6 +65,7 @@
   }
 }
 
+
 .profile-contact__icon-email {
   position: absolute;
   top: calc(50% - 7px);
@@ -85,32 +86,17 @@
   border-color: @basic-color-achtung;
 }
 
-// .profile-contact__phohe {
-//   &:hover {
-//     svg  {
-//       fill: red;
-//     }
-//   }
-// }
-
 .profile-contact__email,
 .profile-contact__phone {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @basic-dark;
-  border: 1px solid @light-gray-vogue;
-  // padding: 14px 15px;
+  border: 1px solid @gray-super-puper;
 
-  // &[placeholder],
-  // &::-moz-placeholder,
-  // &:-moz-placeholder,
-  // &:-ms-input-placeholder {
-  //   font-size: 16px;
-  //   line-height: 18px;
-  //   text-transform: uppercase;
-  //   color: @basic-dark;
-  // }
+  &:hover {
+    border-color: @light-gray-vogue;
+  }
 }
 
 .profile-contact__label {
@@ -233,5 +219,4 @@
     top: calc(50% - 11px);
     left: 532px;
   }
-
 }
