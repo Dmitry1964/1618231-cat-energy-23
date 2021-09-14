@@ -9,6 +9,27 @@
   font-weight: 400;
   color: @basic-black;
   margin: 0 0 36px 0;
+  position: relative;
+}
+
+.optionally__title::after {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  height: 2px;
+  background-color: @basic-green;
+  top: 50%;
+  left: 248px;
+}
+
+.optionally__title::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 2px;
+  background-color: @basic-green;
+  top: 50%;
+  right: 300px;
 }
 
 .optionally__list {
@@ -79,13 +100,13 @@
   align-items: center;
   width: 280px;
   height: 289px;
-  background-image: url(../img/background/cat-background-box.png);
+  background-image: url("../img/background/cat-background-box.png");
   background-repeat: no-repeat;
   margin-bottom: 35px;
 
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/background/cat-background-box@2x.png);
+    background-image: url("../img/background/cat-background-box@2x.png");
     background-size: 280px auto;
   }
 }
@@ -122,6 +143,15 @@
     line-height: 36px;
     margin: 0 0 80px 36px;
   }
+
+  .optionally__title::after {
+    left: 374px;
+  }
+
+  .optionally__title::before {
+    right: 708px;
+  }
+
 
   .optionally__item {
     display: flex;
@@ -163,12 +193,12 @@
   .optionally__offer {
     width: 708px;
     height: 200px;
-    background-image: url(../img/background/cat-box-tablet.png);
+    background-image: url("../img/background/cat-box-tablet.png");
     background-repeat: no-repeat;
     flex-direction: row;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/background/cat-box-tablet@2x.png);
+      background-image: url("../img/background/cat-box-tablet@2x.png");
       background-size: 708px auto;
     }
   }
@@ -194,6 +224,14 @@
 
   .optionally__title {
     margin: 0 0 81px 0;
+  }
+
+  .optionally__title::after {
+    width: 80vw;
+  }
+
+  .optionally__title::before {
+    right: 377px;
   }
 
   .optionally__list {
@@ -223,7 +261,6 @@
   .optionally__item-meaning {
     width: 45px;
     margin: 0;
-    // margin-left: 112px;
     text-align: left;
   }
 
@@ -239,13 +276,13 @@
   .optionally__offer {
     width: 245px;
     height: 289px;
-    background-image: url(../img/background/cat-box-desktop.png);
+    background-image: url("../img/background/cat-box-desktop.png");
     background-repeat: no-repeat;
     flex-direction: column;
     align-items: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/background/cat-box-desktop@2x.png);
+      background-image: url("../img/background/cat-box-desktop@2x.png");
       background-size: 245px auto;
     }
   }

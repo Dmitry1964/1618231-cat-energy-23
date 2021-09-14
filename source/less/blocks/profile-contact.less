@@ -19,7 +19,7 @@
   width: 50vw;
   height: 2px;
   background-color: @basic-green;
-  top: 16px;
+  top: calc(50% - 2px);
   left: 201px;
 }
 
@@ -196,6 +196,16 @@
     padding: 10px 10px 10px 21px;
   }
 
+  .profile-contact__email::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile-contact__phone::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
 
   .profile-contact__label {
     font-size: 20px;
@@ -205,7 +215,7 @@
 
 @media (min-width: @desktop-width) {
   .profile-contact {
-    margin: 0 0 69px;
+    margin: 0 0 67px;
   }
 
   .profile-contact__title {

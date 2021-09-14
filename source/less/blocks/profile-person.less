@@ -15,10 +15,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 
   & .field-input {
-    padding: 14px 15px;
+    padding: 13px 15px;
   }
 
   &:first-child .field-input {
@@ -52,6 +52,11 @@
   &:optional:invalid {
     border: 2px solid @basic-color-achtung;
   }
+}
+
+.profile-person__field::placeholder {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .profile-person__label {
@@ -100,6 +105,10 @@
     color: @basic-dark;
   }
 
+  .profile-person__field::placeholder {
+    font-size: 20px;
+  }
+
   .profile-person__label {
     font-size: 20px;
     line-height: 30px;
@@ -111,7 +120,7 @@
 @media (min-width: @desktop-width) {
   .profile-person {
     width: 569px;
-    margin: 0 80px 69px 0;
+    margin: 0 80px 68px 0;
   }
 
   .profile-person__list {
