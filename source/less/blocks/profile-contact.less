@@ -19,7 +19,7 @@
   width: 50vw;
   height: 2px;
   background-color: @basic-green;
-  top: 16px;
+  top: calc(50% - 2px);
   left: 201px;
 }
 
@@ -78,13 +78,47 @@
   left: 245px;
 }
 
-.profile-contact__email:optional:invalid {
-  border-color: @basic-color-achtung;
+.profile-contact__email:focus + .profile-contact__icon-email {
+  & line {
+    stroke: @basic-green;
+  }
+
+  & path {
+    stroke: @basic-green;
+  }
 }
 
-.profile-contact__phone:optional:invalid {
-  border-color: @basic-color-achtung;
+.profile-contact__phone:focus + .profile-contact__icon-phone {
+  stroke: @basic-green;
 }
+
+
+.profile-contact__email {
+  &:invalid {
+    border-color: @basic-color-achtung;
+  }
+}
+
+.profile-contact__phone {
+  &:invalid {
+    border-color: @basic-color-achtung;
+  }
+}
+
+.profile-contact__email:invalid + .profile-contact__icon-email {
+  & line {
+    stroke: @basic-color-achtung;
+  }
+
+  & path {
+    stroke: @basic-color-achtung;
+  }
+}
+
+.profile-contact__phone:invalid + .profile-contact__icon-phone {
+  stroke: @basic-color-achtung;
+}
+
 
 .profile-contact__email,
 .profile-contact__phone {
@@ -127,7 +161,6 @@
     top: 50%;
   }
 
-
   .profile-contact__item {
     width: 708px;
     padding: 0 35px 0 40px;
@@ -163,6 +196,17 @@
     padding: 10px 10px 10px 21px;
   }
 
+  .profile-contact__email::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile-contact__phone::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
   .profile-contact__label {
     font-size: 20px;
     line-height: 30px;
@@ -171,7 +215,7 @@
 
 @media (min-width: @desktop-width) {
   .profile-contact {
-    margin: 0 0 69px;
+    margin: 0 0 67px;
   }
 
   .profile-contact__title {

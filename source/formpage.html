@@ -20,6 +20,8 @@
             <img class="page-header__image" src="img/logo-text.svg" width="101" height="18" alt="Название">
             <img class="page-header__image" src="img/logo-image-tablet.svg" width="174" height="52"
               alt="Логотип магазина">
+            <img class="page-header__image" src="img/logo-image-desktop.svg" width="202" height="59"
+              alt="Логотип магазина">
           </div>
         </a>
         <button class="page-header__button page-header__button--open" type="button">
@@ -31,7 +33,7 @@
           <li class="page-header__item"><a class="page-header__link" href="index.html">Главная</a></li>
           <li class="page-header__item"><a class="page-header__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="page-header__item active-desktop"><a class="page-header__link" href="formpage.html">Подбор
+          <li class="page-header__item active active-desktop"><a class="page-header__link">Подбор
               программы</a>
           </li>
         </ul>
@@ -91,15 +93,22 @@
               <label class="profile-contact__label" for="email">e-mail:*</label>
               <input class="profile-contact__email field-input" type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com">
-              <svg width="18" height="13">
-                <use xlink:href="img/sprite.svg#icon-covert"></use>
+              <svg class="profile-contact__icon-email" width="19" height="14" viewBox="0 0 19 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.18955" y1="6" x2="1.18955" y2="14" stroke="#222222" stroke-width="1.3" />
+                <line x1="18.1896" y1="6" x2="18.1896" y2="14" stroke="#222222" stroke-width="1.3" />
+                <line x1="0.539551" y1="13.35" x2="18.5396" y2="13.35" stroke="#222222" stroke-width="1.3" />
+                <line x1="0.539551" y1="1.35" x2="18.5396" y2="1.35" stroke="#222222" stroke-width="1.3" />
+                <path
+                  d="M17.8896 3.1821L9.53957 9.67654L1.18955 3.18209V1.65H4.03955L9.53957 1.65H14.5396H17.8896V3.1821Z"
+                  stroke="#222222" stroke-width="1.3" />
               </svg>
             </li>
             <li class="profile-contact__item">
               <label class="profile-contact__label" for="phone">Телефон:*</label>
               <input class="profile-contact__phone field-input" type="tel" name="phone" id="phone"
                 pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90">
-              <svg width="20" height="20">
+              <svg class="profile-contact__icon-phone" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </li>
@@ -145,7 +154,7 @@
     <div class="section-wrapper">
       <section class="partnership partnership-background">
         <div class="partnership__wrapper">
-          <h2 class="partnership__title">Приглашаем к сотрудничеству диллеров!</h2>
+          <h2 class="partnership__title">Приглашаем<br>к сотрудничеству диллеров!</h2>
           <ul class="partnership__list">
             <li class="partnership__item">
               ул. Большая

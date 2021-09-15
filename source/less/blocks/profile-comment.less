@@ -1,6 +1,6 @@
 .profile-comment {
   border: none;
-  margin: 0 0 18px;
+  margin: 0 0 22px;
   padding: 0;
 }
 
@@ -19,7 +19,7 @@
   width: 50vw;
   height: 2px;
   background-color: @basic-green;
-  top: 50%;
+  top: calc(50% + 2px);
   left: 143px;
 }
 
@@ -29,7 +29,7 @@
   width: 1000px;
   height: 2px;
   background-color: @basic-green;
-  top: 50%;
+  top: calc(50% + 2px);
   right: 310px;
 }
 
@@ -72,16 +72,21 @@
   .profile-comment__description {
     width: 631px;
     height: 174px;
-    padding: 10px 19px;
+    padding: 15px 19px;
     margin-left: 40px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .profile-comment__description::placeholder {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .profile-comment {
-    margin: 0 0 62px;
+    margin: 0 0 64px;
   }
 
   .profile-comment__title {
