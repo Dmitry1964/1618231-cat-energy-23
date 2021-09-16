@@ -52,17 +52,17 @@
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-name">Имя:*</label>
                 <input class="profile-person__field field-input" type="text" name="cat-name" id="cat-name"
-                  pattern="[а-яёА-ЯЁ]*" placeholder="Барсик">
+                  pattern="[а-яёА-ЯЁ]*" placeholder="Барсик" aria-label="Вашего котика зовут">
               </li>
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-weight">Вес (кг):*</label>
                 <input class="profile-person__field field-input" type="text" name="cat-age" id="cat-weight"
-                  pattern="[1-9]{2}" placeholder="7">
+                  pattern="[1-9]{2}" placeholder="7" aria-label="Он весит">
               </li>
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-age">Возраст (лет):</label>
-                <input class="profile-person__field field-input" type="text" name="cat-age" id="cat-age"
-                  placeholder="7">
+                <input class="profile-person__field field-input" type="text" name="cat-age" id="cat-age" placeholder="7"
+                  aria-label="Возраст вашего питомца">
               </li>
             </ul>
           </fieldset>
@@ -92,7 +92,7 @@
             <li class="profile-contact__item">
               <label class="profile-contact__label" for="email">e-mail:*</label>
               <input class="profile-contact__email field-input" type="email" name="email" id="email"
-                placeholder="kuklachev@gmail.com">
+                placeholder="kuklachev@gmail.com" aria-label="Ваш электронный адрес">
               <svg class="profile-contact__icon-email" width="19" height="14" viewBox="0 0 19 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.18955" y1="6" x2="1.18955" y2="14" stroke="#222222" stroke-width="1.3" />
@@ -107,7 +107,8 @@
             <li class="profile-contact__item">
               <label class="profile-contact__label" for="phone">Телефон:*</label>
               <input class="profile-contact__phone field-input" type="tel" name="phone" id="phone"
-                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90">
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90"
+                aria-label="Ваш телефон">
               <svg class="profile-contact__icon-phone" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
