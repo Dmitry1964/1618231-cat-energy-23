@@ -103,6 +103,18 @@
   background-image: url("../img/background/cat-background-box.png");
   background-repeat: no-repeat;
   margin-bottom: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 83px;
+    background-image: url("../img/icon/icon-gift.svg");
+    background-repeat: no-repeat;
+    top: 58px;
+    left: calc(50% - 40px);
+  }
 
 
   @media (min-resolution: 2dppx) {
@@ -111,11 +123,6 @@
   }
 }
 
-.optionally__offer-icon {
-  width: 78px;
-  height: 80px;
-  margin: 59px 0 48px 0;
-}
 
 .optionally__offer-title {
   width: 161px;
@@ -125,7 +132,7 @@
   font-weight: 400;
   color: @basic-white;
   text-align: center;
-  margin: 0;
+  margin-top: 187px;
 }
 
 @media (min-width: @tablet-width) {
@@ -191,11 +198,16 @@
   }
 
   .optionally__offer {
+    flex-direction: row;
+    justify-content: flex-end;
     width: 708px;
     height: 200px;
     background-image: url("../img/background/cat-box-tablet.png");
     background-repeat: no-repeat;
-    flex-direction: row;
+
+    &::before {
+      left: 77px;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/cat-box-tablet@2x.png");
@@ -203,12 +215,9 @@
     }
   }
 
-  .optionally__offer-icon {
-    margin: 0 265px 0 77px;
-  }
-
   .optionally__offer-title {
-    text-align: start;
+    margin: 0 124px 0 0;
+    text-align: left;
   }
 }
 
@@ -270,6 +279,7 @@
   }
 
   .optionally__offer-title {
+    margin: 0 0 42px 0;
     text-align: center;
   }
 
@@ -280,6 +290,10 @@
     background-repeat: no-repeat;
     flex-direction: column;
     align-items: center;
+
+    &::before {
+      left: calc(50% - 40px);
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/cat-box-desktop@2x.png");
