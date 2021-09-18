@@ -100,7 +100,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 280px;
-  height: 289px;
+  height: auto;
   background-image: url("../img/background/cat-background-box.png");
   background-repeat: no-repeat;
   background-color: @basic-green;
@@ -203,7 +203,7 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../img/background/cat-box-tablet.png");
     background-repeat: no-repeat;
 
@@ -281,16 +281,17 @@
   }
 
   .optionally__offer-title {
-    margin: 0 0 42px 0;
+    margin: 184px auto 0;
     text-align: center;
   }
 
   .optionally__offer {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     background-image: url("../img/background/cat-box-desktop.png");
     background-repeat: no-repeat;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
 
     &::before {
