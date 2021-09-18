@@ -63,7 +63,7 @@
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-weight">Вес (кг):*</label>
                 <input class="profile-person__field field-input" type="text" name="cat-age" id="cat-weight"
-                  pattern="[1-9]{2}" placeholder="7" aria-label="Он весит">
+                  pattern="[1-9]{2}" placeholder="7" aria-label="Вес вашего кота">
               </li>
               <li class="profile-person__item">
                 <label class="profile-person__label" for="cat-age">Возраст (лет):</label>
@@ -76,16 +76,17 @@
             <ul class="profile-target__list">
               <li class="profile-target__item">
                 <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target" id="thin-cat"
-                  checked>
+                  checked aria-label="Выбрать прогрымму похудения">
                 <label class="profile-target__label" for="thin-cat">Похудение</label>
               </li>
               <li class="profile-target__item">
-                <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target" id="hard-cat">
+                <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target" id="hard-cat"
+                  aria-label="Выбрать программу набора мвссы">
                 <label class="profile-target__label" for="hard-cat">Набор массы</label>
               </li>
               <li class="profile-target__item">
                 <input class="profile-target__radio-input visually-hidden" type="radio" name="cat-target"
-                  id="middle-cat" disabled>
+                  id="middle-cat" disabled aria-label="Выберите чтобы мы вам подсказали">
                 <label class="profile-target__label" for="middle-cat">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -233,10 +234,12 @@
       </div>
       <div class="page-footer__copyright copyright-items">
         <p class="page-footer__copyright-title">
+          <span class="visually-hidden">Переход на сайт</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </p>
         <p class="page-footer__copyright-logo">
           <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Разработано в html academy</span>
             <svg class="page-footer__copyright-image" width="27" height="34" viewBox="0 0 27 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path

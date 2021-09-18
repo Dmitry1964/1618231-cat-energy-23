@@ -158,7 +158,7 @@
 
   .profile-optionally__item {
     width: 221px;
-    height: 40px;
+    min-height: 40px;
     margin: 0 104px 0 0;
     padding: 2px 0 0 59px;
 
@@ -166,8 +166,12 @@
       margin-bottom: 0;
     }
 
-    &:last-child {
+    &:nth-child(4n + 4) {
       margin-right: 24px;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 20px;
     }
   }
 }
