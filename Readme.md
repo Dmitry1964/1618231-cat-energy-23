@@ -16,3 +16,5 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
+Для запуска сначала установить зависимости npm i
+Затем npm start или npm start build
